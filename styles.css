@@ -31,6 +31,7 @@ main {
     border-radius: 15px;
     width: 50%;
     height: 25%;
+    background-color: white;
 }
 
 /*container for the preview image*/
@@ -61,11 +62,22 @@ h2{
     color: hsl(217, 19%, 35%);
 }
 
+p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+}
+
 /*
     the last bit of content in the preview make up a row
     the pfp, name/date (make these a column?) and the share button.
     looking closer at the design, it might be good to make the pfp, name, and date their own container
 */
 .content-row {
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid blue;
 }
