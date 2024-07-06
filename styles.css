@@ -1,0 +1,71 @@
+/*
+    author: jacob stone
+    file: styles.css for the article preview
+*/
+
+/*font imports*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*container for the article preview*/
+.preview-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 50%;
+    height: 25%;
+}
+
+/*container for the preview image*/
+.preview-img {
+    display: flex;
+    flex: 1;
+    border-radius: 15px;
+}
+
+/*img styles*/
+.preview-img img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/*container for the content preview*/
+.preview-content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border: 1px solid green;
+    margin: 30px;
+}
+
+h2{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+/*
+    the last bit of content in the preview make up a row
+    the pfp, name/date (make these a column?) and the share button.
+    looking closer at the design, it might be good to make the pfp, name, and date their own container
+*/
+.content-row {
+
+}
