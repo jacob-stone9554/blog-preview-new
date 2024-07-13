@@ -1,9 +1,4 @@
-/*
-    author: jacob stone
-    file: styles.css for the article preview
-*/
-
-/*font imports*/
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 body, main, footer {
@@ -23,7 +18,7 @@ main {
     height: 100vh;
 }
 
-/*container for the article preview*/
+
 .preview-container {
     display: flex;
     flex-direction: row;
@@ -33,14 +28,12 @@ main {
     background-color: white;
 }
 
-/*container for the preview image*/
 .preview-img {
     display: flex;
     flex: 1;
     border-radius: 15px;
 }
 
-/*img styles*/
 .preview-img img {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -49,7 +42,6 @@ main {
     object-fit: cover;
 }
 
-/*container for the content preview*/
 .preview-content {
     display: flex;
     flex-direction: column;
@@ -116,17 +108,187 @@ main {
     background-color: hsl(210, 46%, 95%);
     height: 35px;
     width: 35px;
+    cursor: pointer;
 }
 
 .share-menu {
     display: none;
     position: absolute;
+    border-radius: 10px;
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
     background-color: hsl(217, 19%, 35%);
     z-index: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    margin: 15px;
+}
+
+.icon {
+    border-radius: 0px;
+    transform: scale(0.5);
+}  */
+
+/*font imports*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*container for the article preview*/
+.preview-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    width: 50%;
+    height: 35%;
+    background-color: white;
+}
+
+/*container for the preview image*/
+.preview-img {
+    display: flex;
+    flex: 1;
+    border-radius: 15px;
+}
+
+/*img styles*/
+.preview-img img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/*container for the content preview*/
+.preview-content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 30px;
+}
+
+.preview-content h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.preview-content p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.bottom-row {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+}
+
+.bottom-row img {
+    border-radius: 100%;
+    height: 50px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.name-date-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-date-col h5 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.share-btn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Highlighted line */
+    background-color: hsl(210, 46%, 95%);
+    height: 35px;
+    width: 35px;
+    cursor: pointer; /* Highlighted line */
+}
+
+.share-menu {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px); /* Highlighted line */
+    background-color: hsl(217, 19%, 35%);
+    z-index: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; /* Highlighted line */
+    width: 250px;
+    height: 50px;
+}
+
+.share-menu img {
+    height: 50%
+}
+
+.share-menu p {
+    color: white; /* Highlighted line */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em; /* Highlighted line */
+    margin: 0 10px; /* Highlighted line */
+}
+
+.icon {
+    border-radius: 0;
+    height: 20px; /* Highlighted line */
+    width: 20px; /* Highlighted line */
+}
+
+.share-menu-triangle {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: 35px; /* Highlighted line */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent; /* Make the bottom border visible */
 }
