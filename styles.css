@@ -292,3 +292,24 @@ main {
     border-style: solid;
     border-color: hsl(217, 19%, 35%) transparent transparent transparent; /* Make the bottom border visible */
 }
+
+
+@media (min-width: 375px) and (max-width: 390px) {
+    .preview-container {
+        width: 85%;
+        height: 80%;
+        flex-direction: column;
+    }
+
+    .preview-container h2 {
+        font-size: 16px;
+    }
+
+    .preview-img img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        height: 70%;
+        width: 100%;
+    }
+}
