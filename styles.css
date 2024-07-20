@@ -247,21 +247,21 @@ main {
     cursor: pointer; /* Highlighted line */
 }
 
-.share-menu {
+ .share-menu {
     display: none;
     position: absolute;
     border-radius: 10px;
     bottom: 100%;
     left: 50%;
-    transform: translateX(-50%) translateY(-20px); /* Highlighted line */
+    transform: translateX(-50%) translateY(-20px); 
     background-color: hsl(217, 19%, 35%);
     z-index: 1;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around; /* Highlighted line */
+    justify-content: space-around; 
     width: 250px;
     height: 50px;
-}
+} 
 
 .share-menu img {
     height: 50%
@@ -311,5 +311,21 @@ main {
         border-bottom-left-radius: 0px;
         height: 70%;
         width: 100%;
+    }
+
+    
+
+     .share-menu {
+        bottom: auto; 
+        left: auto; 
+        top: 50%; 
+        right: 50%; 
+        width: 85vw;
+        transform: translateY(-50%) translateX(15%);
+    } 
+
+
+    .share-btn {
+        position: relative; /* Ensure the share button's position context */
     }
 }
