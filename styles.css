@@ -200,6 +200,6 @@ main {
 
 
     .share-btn {
-        position: relative; /* Ensure the share button's position context */
+        position: relative;
     }
 }
