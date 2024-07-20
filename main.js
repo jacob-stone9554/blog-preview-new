@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function checkTriangle() {
-        if(window.innerWidth <= 375) {
+        if(window.innerWidth <= 405) {
             triangle.style.display = 'none';
         }
     }

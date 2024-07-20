@@ -161,7 +161,7 @@ main {
 }
 
 
-@media (min-width: 375px) and (max-width: 400px) {
+@media (min-width: 375px) and (max-width: 405px) {
     .preview-container {
         width: 85%;
         height: 80%;
