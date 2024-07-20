@@ -192,8 +192,8 @@ main {
         right: 50%; 
         width: 85vw;
         transform: translateY(-50%) translateX(15%);
-        height: 75px;
-        margin-top: 13px;
+        height: 85px;
+        margin-top: 18px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     } 
