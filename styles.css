@@ -114,6 +114,11 @@ main {
     cursor: pointer; /* Highlighted line */
 }
 
+.share-btn:active {
+    background-color:hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+}
+
  .share-menu {
     display: none;
     position: absolute;
